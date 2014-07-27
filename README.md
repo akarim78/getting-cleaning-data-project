@@ -16,5 +16,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 1) Combined dataset: merged_dataset.txt
 2) Tidy dataset: tidy_data.txt
 
+## Description of the script:
+The run_analysis.R script reads a number of txt files, merge them to create a dataset and then generate a tidy dataset according to the requirements.
+
 ## Note
 Reshape2 library will be needed.  
