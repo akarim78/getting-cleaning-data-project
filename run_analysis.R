@@ -47,7 +47,7 @@ names(all_data)[names(all_data) == 'y_data_f'] <- 'activity'
 write.table(all_data, file = 'merged_dataset.txt', col.names=TRUE)
 
 ## 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-col_selection <- grep("*[Mm]ean()|*[Ss]td()|activity|subject",names(all_data),ignore.case=TRUE)
+col_selection <- grep("*[Mm]ean[()]|*[Ss]td[()]|activity|subject",names(all_data),ignore.case=TRUE)
 selected_data <- all_data[, col_selection]
 
 ## 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
@@ -56,3 +56,4 @@ tidy_data <- dcast(temp_data, activity + subject ~ variable,mean)
 head(tidy_data)
 ## Create a file with the new tidy dataset
 write.table(tidy_data,"tidy_data.txt")
+
