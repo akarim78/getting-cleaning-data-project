@@ -19,5 +19,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ## Description of the script:
 The run_analysis.R script reads a number of txt files, merge them to create a dataset and then generate a tidy dataset according to the requirements.
 
+Details about the tidy data is provided in CodeBook.md
+
 ## Note
 Reshape2 library will be needed.  
